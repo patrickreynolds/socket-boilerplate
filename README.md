@@ -1,11 +1,9 @@
 socket-boilerplate
 ==================
 
-Socket boilerplate, as the name implies, is a boilerplate setup of a full stack web and iOS application with bi-communication set up via WebSockets using Socket.io
+Socket boilerplate, as the name implies, is a boilerplate setup of a full stack web and iOS application with bi-directional event set up via WebSockets using Socket.io
 
 ![Gif Demo](https://github.com/patrickreynolds/socket-boilerplate/raw/master/screenshots/socket-boilerplate-gif.gif)
-
-===
 
 ## To Run
 1. Download the whole repo (web and iOS app)
@@ -21,9 +19,6 @@ Socket boilerplate, as the name implies, is a boilerplate setup of a full stack 
 
 ### web
 - [body-parser](https://www.npmjs.com/package/body-parser)
-
 - [express](https://www.npmjs.com/package/express)
-
 - [nodemon](https://www.npmjs.com/package/nodemon)
-
 - [socket.io](https://www.npmjs.com/package/socket.io)
