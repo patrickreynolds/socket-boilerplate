@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Socket Boilerplate</title>
+		<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	</head>
+	<body>
+		<div id="notification"></div>
+		<div class="image-container">
+			<img src="/public/images/Apple_Swift_Logo.png" />
+			
+			<button class="event-button" id="dislike-button">Dislike</button>
+			<button class="event-button" id="like-button">Like</button>
+		</div>
+		<div>
+			<canvas id="whiteboard" width="350" height="150"></canvas>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		<script src="/public/js/move.min.js"></script>
+		<script src="/public/js/socket-demo.js"></script>
+	</body>
+</html>

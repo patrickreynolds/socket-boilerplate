@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocketBoilerplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple_Swift_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-8c-QoC">
+                                <rect key="frame" x="150" y="68" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hTW-8c-QoC" secondAttribute="height" multiplier="1:1" id="EpZ-nG-6G9"/>
+                                    <constraint firstAttribute="width" constant="300" id="YpZ-vs-Q1a"/>
+                                    <constraint firstAttribute="height" constant="300" id="q4G-Tu-Q2i"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXO-Hr-K4W">
+                                <rect key="frame" x="150" y="376" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WaJ-9K-7TO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Dislike">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZM-ha-lB1">
+                                <rect key="frame" x="300" y="376" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aH5-AS-4sb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleLikeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRA-jc-X6C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-w1-VTT">
+                                <rect key="frame" x="16" y="20" width="568" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GMG-Ln-CUE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-qD-q8D">
+                                <rect key="frame" x="16" y="424" width="568" height="156"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DDs-J8-wUa">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="156"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DDs-J8-wUa" secondAttribute="bottom" id="30W-jt-efh"/>
+                                    <constraint firstAttribute="trailing" secondItem="DDs-J8-wUa" secondAttribute="trailing" id="IGH-xW-p9i"/>
+                                    <constraint firstItem="DDs-J8-wUa" firstAttribute="top" secondItem="f0E-qD-q8D" secondAttribute="top" id="Ldw-e4-46J"/>
+                                    <constraint firstAttribute="height" constant="156" id="N8z-UC-0Ja"/>
+                                    <constraint firstItem="DDs-J8-wUa" firstAttribute="leading" secondItem="f0E-qD-q8D" secondAttribute="leading" id="qKe-hm-3nl"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="H7I-LQ-jnk" appends="YES" id="Neb-LO-FOY"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f0E-qD-q8D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3z3-PH-UDX"/>
+                            <constraint firstItem="EZM-ha-lB1" firstAttribute="top" secondItem="hTW-8c-QoC" secondAttribute="bottom" constant="8" id="7NH-kc-RRe"/>
+                            <constraint firstItem="Qud-w1-VTT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7Yp-jx-eP5"/>
+                            <constraint firstItem="Qud-w1-VTT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KgL-Vj-7Mj"/>
+                            <constraint firstItem="Qud-w1-VTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xal-Lh-eXO"/>
+                            <constraint firstItem="hTW-8c-QoC" firstAttribute="width" secondItem="EZM-ha-lB1" secondAttribute="width" multiplier="2" id="eqi-Mh-3ag"/>
+                            <constraint firstItem="mXO-Hr-K4W" firstAttribute="width" secondItem="EZM-ha-lB1" secondAttribute="width" id="fWW-8D-EBm"/>
+                            <constraint firstItem="f0E-qD-q8D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h1b-7B-yt2"/>
+                            <constraint firstAttribute="centerX" secondItem="hTW-8c-QoC" secondAttribute="centerX" id="h4F-gG-BU0"/>
+                            <constraint firstItem="hTW-8c-QoC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="kI6-HE-h7R"/>
+                            <constraint firstItem="hTW-8c-QoC" firstAttribute="trailing" secondItem="EZM-ha-lB1" secondAttribute="trailing" id="pX0-mu-DJP"/>
+                            <constraint firstItem="mXO-Hr-K4W" firstAttribute="leading" secondItem="hTW-8c-QoC" secondAttribute="leading" id="rJu-Q2-ARe"/>
+                            <constraint firstItem="mXO-Hr-K4W" firstAttribute="top" secondItem="hTW-8c-QoC" secondAttribute="bottom" constant="8" id="vrY-q6-4Rh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f0E-qD-q8D" secondAttribute="bottom" constant="20" id="zGR-pP-C3G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="f0E-qD-q8D" id="x4R-DK-A8i"/>
+                        <outlet property="drawImage" destination="DDs-J8-wUa" id="mxJ-e9-zKH"/>
+                        <outlet property="notificationLabel" destination="Qud-w1-VTT" id="CmF-iX-nxe"/>
+                        <outlet property="notificationVerticalSpacingToTopLayoutGuide" destination="7Yp-jx-eP5" id="SSZ-c3-dyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="H7I-LQ-jnk" userLabel="Canvas Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="handleCanvasPanGesture:" destination="BYZ-38-t0r" id="WLu-Tf-AB4"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Apple_Swift_Logo.png" width="256" height="256"/>
+    </resources>
+</document>
